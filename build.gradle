@@ -8,6 +8,7 @@ repositories {
 
 dependencies {
     providedCompile 'jakarta.platform:jakarta.jakartaee-web-api:10.0.0'
+    implementation 'com.mysql:mysql-connector-j:8.3.0'
     
     testImplementation     'junit:junit:4.13'
 }
