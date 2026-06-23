@@ -20,7 +20,7 @@
         %>
         <h2 class="error"><%=error %></h2>
         <%}%>
-        <form action="../java/packServlets/Controlador.java" method="post">
+        <form action="/ControladorXYZXYZ" method="post">
             Email:
             <input type="text" name="email" value="u@u.com">
             Perfil:
