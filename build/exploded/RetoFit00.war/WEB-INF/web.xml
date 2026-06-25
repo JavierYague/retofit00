@@ -13,6 +13,6 @@
     </servlet>
     <servlet-mapping>
         <servlet-name>Controlador</servlet-name>
-        <url.pattern>/ControladoXYZXYZ</url.pattern>
+        <url-pattern>/ControladoXYZXYZ</url-pattern>
     </servlet-mapping>
 </web-app>

@@ -9,22 +9,30 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>Gestión de entrenamientos</title>
     </head>
     <body>
-        <h1>Identificación:</h1>
         <!--Todo esto servira para poder consultar que error esta surgiendo en nuestra pagina-->
+        <style>
+            .error{
+                color:red;
+            }
+        </style>
+        <h1>Identificación:</h1>
         <%
-            String error=(String) request.getAttribute("error");
-            if (error!=null){
+            String error=request.getParameter("error");
+            if(error!=null){
         %>
-        <h2 class="error"><%=error %></h2>
-        <%}%>
-        <form action="/ControladorXYZXYZ" method="post">
+        <h2 class="error"><%= error%></h2>
+        <%
+            }
+        %>
+        
+        <form action="ControladorXYZXYZ" method="get">
             Email:
-            <input type="text" name="email" value="u@u.com">
+            <input type="email" name="txtEmail" requiered>
             Perfil:
-            <select name="perfil">
+            <select name="sPerfil">
                 <option value="usuario">Usuario/a</option>
                 <option value="entrenador">Entrenador/a</option>
             </select>
